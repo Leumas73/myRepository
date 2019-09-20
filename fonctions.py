@@ -53,10 +53,16 @@ def read_from_file(filename):
     Renvoie des entiers lus dans le fichier dont le nom est contenu dans filename
     """
     l =[]
-    ...
+    with open(filename, "r") as f:
+        for line in f:
+            l.append(int(line))
     return l
 
 if __name__=="__main__":
   print("""
-  ...
+ Fonctions offertes par ce module :
+  readconf(): blabla
+  read_from_keyboard(): blabla
+  read_from_cmdline(): blabla
+  lire_from_file(): blabla
   """) 
